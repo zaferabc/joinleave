@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD79800E-8684-4580-A427-A98CFD26975D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SK_JoinLeave</RootNamespace>
+    <AssemblyName>SK_JoinLeave</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Libraries\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\Libraries\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="For_Plugins">
+      <HintPath>..\..\Libraries\For_Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>..\..\Libraries\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>..\..\Libraries\I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.v2">
+      <HintPath>..\..\Libraries\I18N.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.v2.West">
+      <HintPath>..\..\Libraries\I18N.v2.West.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.v4">
+      <HintPath>..\..\Libraries\I18N.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.v4.West">
+      <HintPath>..\..\Libraries\I18N.v4.West.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>..\..\Libraries\I18N.West.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N_West">
+      <HintPath>..\..\Libraries\I18N_West.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Libraries\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.West">
+      <HintPath>..\..\Libraries\MySql.Data.West.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pustalorc.Libraries.MySqlConnectorWrapper">
+      <HintPath>..\..\Libraries\Pustalorc.Libraries.MySqlConnectorWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet">
+      <HintPath>..\..\Libraries\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\Libraries\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket.API">
+      <HintPath>..\..\Libraries\Rocket.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket.Core">
+      <HintPath>..\..\Libraries\Rocket.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket.Unturned">
+      <HintPath>..\..\Libraries\Rocket.Unturned.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.NetTransport">
+      <HintPath>..\..\Libraries\SDG.NetTransport.dll</HintPath>
+    </Reference>
+    <Reference Include="Steamworks.NET">
+      <HintPath>..\..\Libraries\Steamworks.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Uconomy">
+      <HintPath>..\..\Libraries\Uconomy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Libraries\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Libraries\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SK_JoinLeave.cs" />
+    <Compile Include="SK_JoinLeaveConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
